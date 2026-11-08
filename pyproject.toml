@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-background-removal-claim-audit"
+version = "0.1.0"
+description = "Offline static documentation claim auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+image-background-removal-claim-audit = "image_background_removal_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["image_background_removal_claim_audit*"]
